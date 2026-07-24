@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="A canvas-based line chart built to practice frontend data visualization: drag-to-select, responsive scaling, and axis labeling, using placeholder sample data.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#03060c">
 <title>Field Notes</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +30,14 @@
     --radius-pill:999px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth;background:var(--bg)}
+  html{
+    scroll-behavior:smooth;
+    background:
+      radial-gradient(650px 650px at 12% 6%, rgba(47,198,255,0.30), transparent 60%),
+      radial-gradient(750px 750px at 95% 18%, rgba(246,227,186,0.20), transparent 60%),
+      radial-gradient(800px 800px at 50% 95%, rgba(47,198,255,0.16), transparent 60%),
+      var(--bg);
+  }
   body{
     background:var(--bg);
     color:var(--cement);
